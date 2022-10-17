@@ -1,0 +1,24 @@
+<h1 mat-dialog-title> Agregar alumno</h1>
+<div mat-dialog-content>
+    <form [formGroup]="formAlumno">
+        <mat-form-field appearance="fill">
+            <mat-label>Nombre</mat-label>
+            <input formControlName="nombre" matInput placeholder="Ingrese un nombre">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Apellido</mat-label>
+            <input formControlName="apellido" matInput placeholder="Ingrese su apellido">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>DNI</mat-label>
+            <input formControlName="dni" matInput placeholder="Ingrese un número de documento">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Turno</mat-label>
+            <input formControlName="turno" matInput placeholder="Ingrese un turno Mañana/Tarde">
+        </mat-form-field>
+    </form>
+</div>
+<div mat-dialog-actions>
+    <button mat-button cdkFocusInitial (click)="guardar()"> Guardar</button>
+</div>
